@@ -23,6 +23,7 @@ parser.add_argument('--log-interval', type=int, default=10, metavar='N',
 args = parser.parse_args()
 args.cuda = not args.no_cuda and torch.cuda.is_available()
 
+# here is a comment
 
 torch.manual_seed(args.seed)
 if args.cuda:
